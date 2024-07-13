@@ -9,62 +9,77 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="d-flex space-between nav ">
-                <ul class="d-flex gap-10">
-                    <li>
-                        <h2>Startup 3</h2>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="dropbtn">
-                                <a class="nav-btn" href="#">Products
-                                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M12.072 1.07143C12.072 0.982143 12.0273 0.881696 11.9604 0.814732L11.4023 0.256696C11.3354 0.189732 11.2349 0.145089 11.1456 0.145089C11.0564 0.145089 10.9559 0.189732 10.889 0.256696L6.50279 4.64286L2.11663 0.256696C2.04967 0.189732 1.94922 0.145089 1.85993 0.145089C1.75949 0.145089 1.6702 0.189732 1.60324 0.256696L1.0452 0.814732C0.978237 0.881696 0.933594 0.982143 0.933594 1.07143C0.933594 1.16071 0.978237 1.26116 1.0452 1.32812L6.24609 6.52902C6.31306 6.59598 6.4135 6.64062 6.50279 6.64062C6.59208 6.64062 6.69252 6.59598 6.75949 6.52902L11.9604 1.32812C12.0273 1.26116 12.072 1.16071 12.072 1.07143Z"
-                                            fill="#151439" fill-opacity="0.4" />
-                                    </svg>
-                                </a>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a class="nav-btn" href="#">Pricing</a></li>
-                    <li><a class="nav-btn" href="#">Community</a></li>
-                </ul>
-                <ul class="d-flex gap-10">
-                    <li><a class="nav-btn" href="#">API</a></li>
-                    <li><a class="nav-btn" href="#">Help</a></li>
-                    <li><a class="nav-btn" href="#">Login</a></li>
-                    <li><button class="btn">Sign Up</button></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h3>A high-quality solution for those who want a beautiful startup website quickly</h3>
-                    <form action="">
-                        <input class="userInput" type="email" placeholder="Your email" id="" name="">
-                        <input class="userInput" type="password" placeholder="Your password" name="" id="">
-                        <button class="btn-1">Sign In</button>
-                        <p class="para">By signing up, you agree to the Terms of Service</p>
-                    </form>
-                </div>
-                <div class="col-6">
-                    <div class="card">
-                        <div class="img">
-                            <div class="pos-r">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/qBkhljixJ6g?si=ZY4YB18vJSrQ5Wg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                <!-- <div class="svg">
+        <header>
+            <div class="container">
+                <nav class="d-flex space-between nav ">
+                    <h2 class="d-none d-lg-flex">Startup 3</h2>
+                    <input class="in-put" type="checkbox" hidden id="connect">
+                    <label for="connect" class="d-none flex-lg-col d-lg-flex">
+                        <span class="span-1"></span>
+                        <span class="span-2"></span>
+                        <span class="span-3"></span>
+
+                    </label>
+                    <div class="nav-links d-flex align-items-center w-100 space-between ">
+                        <ul class="d-flex flex-lg-col align-items-center  gap-10">
+                            <li>
+                                <h2 class="d-lg-none">Startup 3</h2>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                        <a class="nav-btn" href="#">Products
+                                            <svg width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.072 1.07143C12.072 0.982143 12.0273 0.881696 11.9604 0.814732L11.4023 0.256696C11.3354 0.189732 11.2349 0.145089 11.1456 0.145089C11.0564 0.145089 10.9559 0.189732 10.889 0.256696L6.50279 4.64286L2.11663 0.256696C2.04967 0.189732 1.94922 0.145089 1.85993 0.145089C1.75949 0.145089 1.6702 0.189732 1.60324 0.256696L1.0452 0.814732C0.978237 0.881696 0.933594 0.982143 0.933594 1.07143C0.933594 1.16071 0.978237 1.26116 1.0452 1.32812L6.24609 6.52902C6.31306 6.59598 6.4135 6.64062 6.50279 6.64062C6.59208 6.64062 6.69252 6.59598 6.75949 6.52902L11.9604 1.32812C12.0273 1.26116 12.072 1.16071 12.072 1.07143Z"
+                                                    fill="#151439" fill-opacity="0.4" />
+                                            </svg>
+                                        </a>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a class="nav-btn" href="#">Pricing</a></li>
+                            <li><a class="nav-btn" href="#">Community</a></li>
+                        </ul>
+                        <ul class="d-flex align-items-center flex-lg-col gap-10">
+                            <li><a class="nav-btn" href="#">API</a></li>
+                            <li><a class="nav-btn" href="#">Help</a></li>
+                            <li><a class="nav-btn" href="#">Login</a></li>
+                            <li><button class="btn">Sign Up</button></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-12">
+                        <h3>A high-quality solution for those who want a beautiful startup website quickly</h3>
+                        <form action="">
+                            <input class="userInput" type="email" placeholder="Your email" id="" name="">
+                            <input class="userInput" type="password" placeholder="Your password" name="" id="">
+                            <button class="btn-1">Sign In</button>
+                            <p class="para">By signing up, you agree to the Terms of Service</p>
+                        </form>
+                    </div>
+                    <div class="col-6 col-12">
+                        <div class="card">
+                            <div class="img">
+                                <div class="pos-r">
+                                    <iframe class="video" width="560" height="315"
+                                        src="https://www.youtube.com/embed/qBkhljixJ6g?si=ZY4YB18vJSrQ5Wg8"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <!-- <div class="svg">
                                     <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -72,21 +87,21 @@
                                             fill="white" />
                                     </svg>
                                 </div> -->
-                                <p class="para-1">We made it so beutiful and simple. It combines landings, pages, blogs
-                                    and
-                                    shop screens. It is definitely the tool you need in your collection! </p>
+                                    <p class="para-1">We made it so beutiful and simple. It combines landings, pages,
+                                        blogs
+                                        and
+                                        shop screens. It is definitely the tool you need in your collection! </p>
+                                </div>
+
                             </div>
 
+
                         </div>
-
-
                     </div>
                 </div>
             </div>
-        </div>
 
-    </section>
-
+        </section>
 </body>
 
 </html>

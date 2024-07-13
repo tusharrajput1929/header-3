@@ -47,6 +47,7 @@
 .nav {
     padding-top: 67px;
 
+
 }
 
 h2 {
@@ -67,8 +68,10 @@ h3 {
     color: #1E0E62;
     margin-top: 110px;
     margin-bottom: 77px;
+    max-width: 600px;
 
 }
+
 
 .nav-btn {
 
@@ -76,6 +79,7 @@ h3 {
     font-size: 18px;
     line-height: 26px;
     color: #A1A1B0;
+
 
 }
 
@@ -115,7 +119,8 @@ h3 {
 }
 
 .btn-1 {
-    width: 470px;
+    max-width: 470px;
+    width: 100%;
     height: 60px;
     border-radius: 100px;
     background-color: #25DAC5;
@@ -143,14 +148,16 @@ h3 {
 
 .img {
     margin-top: 123px;
-    width: 470px;
+    max-width: 470px;
+    width: 100%;
     height: 265px;
 
 }
 
 .svg {
     background-color: red;
-    width: 70px;
+    max-width: 70px;
+    width: 100%;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -220,4 +227,95 @@ form {
 
 .dropdown:hover .dropbtn {
     background-color: #FFFFFF;
+}
+
+.d-none {
+    display: none;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+@media (max-width:992px) {
+    label>span {
+        transition: all 200ms linear;
+    }
+
+    input:checked~label span:nth-child(2) {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    input:checked~label span:first-child {
+        transform: rotate(35deg);
+        transform-origin: left;
+    }
+
+    input:checked~label span:last-child {
+        transform: rotate(-35deg);
+        transform-origin: left;
+    }
+
+    .col-12 {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    span {
+        width: 35px;
+        height: 5px;
+        margin-bottom: 5px;
+        background-color: black;
+        display: flex;
+        z-index: 4;
+
+    }
+
+    .d-lg-flex {
+        display: flex;
+    }
+
+    .d-lg-none {
+        display: none;
+    }
+
+    .flex-lg-col {
+        flex-direction: column;
+    }
+
+  
+
+
+    .nav-links {
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        top: 0;
+        position: fixed;
+        background-color: whitesmoke;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        right: -100%;
+        transition: all 300ms linear;
+
+
+    }
+
+    .in-put:checked~.nav-links {
+        right: 0;
+    }
+
+    .video {
+        width: 100%;
+        height: 300px;
+
+    }
+
 }
